@@ -1,0 +1,2 @@
+var isKaiAdReady = 1;
+
