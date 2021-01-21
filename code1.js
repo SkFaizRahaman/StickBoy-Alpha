@@ -724,7 +724,7 @@ gdjs.MainSceneCode.GDStickObjects2.length = k;}}
 if (gdjs.MainSceneCode.condition1IsTrue_0.val) {
 /* Reuse gdjs.MainSceneCode.GDStickObjects2 */
 {for(var i = 0, len = gdjs.MainSceneCode.GDStickObjects2.length ;i < len;++i) {
-    gdjs.MainSceneCode.GDStickObjects2[i].setAngle(gdjs.MainSceneCode.GDStickObjects2[i].getAngle() + (5));
+    gdjs.MainSceneCode.GDStickObjects2[i].setAngle(gdjs.MainSceneCode.GDStickObjects2[i].getAngle() + (10));
 }
 }}
 
