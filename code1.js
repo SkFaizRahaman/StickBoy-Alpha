@@ -98,10 +98,10 @@ gdjs.MainSceneCode.condition3IsTrue_1 = {val:false};
 
 //Keys Inputs Configuration
 var keys = {
-    ClickRight =false,
-    ClickLeft = false,
-    ClickUp = false,
-    ClickDown = false,
+    ClickRight :false,
+    ClickLeft : false,
+    ClickUp : false,
+    ClickDown : false,
     left : false,
     right : 0,
     center : 0

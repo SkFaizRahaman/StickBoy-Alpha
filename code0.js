@@ -6,22 +6,20 @@ gdjs.MenuSceneCode.GDPlayBtnObjects2= [];
 gdjs.MenuSceneCode.GDExitBtnObjects1= [];
 gdjs.MenuSceneCode.GDExitBtnObjects2= [];
 
+
 gdjs.MenuSceneCode.conditionTrue_0 = {val:false};
 gdjs.MenuSceneCode.condition0IsTrue_0 = {val:false};
 gdjs.MenuSceneCode.condition1IsTrue_0 = {val:false};
 gdjs.MenuSceneCode.condition2IsTrue_0 = {val:false};
-
-//Keys Inputs Configuration
 var keys = {
-    ClickRight =false,
-    ClickLeft = false,
-    ClickUp = false,
-    ClickDown = false,
+    ClickRight :false,
+    ClickLeft : false,
+    ClickUp : false,
+    ClickDown : false,
     left : false,
     right : 0,
     center : 0
 };
-//End Inputs Configurations
 
 gdjs.MenuSceneCode.eventsList0 = function(runtimeScene) {
 
@@ -79,7 +77,6 @@ gdjs.copyArray(runtimeScene.getObjects("PlayBtn"), gdjs.MenuSceneCode.GDPlayBtnO
 }{runtimeScene.getVariables().get("playSelected").setNumber(0);
 }}
 }
-
 }
 
 
@@ -117,9 +114,9 @@ gdjs.copyArray(runtimeScene.getObjects("PlayBtn"), gdjs.MenuSceneCode.GDPlayBtnO
 gdjs.MenuSceneCode.condition0IsTrue_0.val = false;
 gdjs.MenuSceneCode.condition1IsTrue_0.val = false;
 {
-gdjs.MenuSceneCode.condition0IsTrue_0.val = !(gdjs.evtTools.input.anyKeyPressed(runtimeScene))//!(gdjs.evtTools.input.wasKeyReleased(runtimeScene, "Space"));
+gdjs.MenuSceneCode.condition0IsTrue_0.val = !(gdjs.evtTools.input.anyKeyPressed(runtimeScene))//(gdjs.evtTools.input.wasKeyReleased(runtimeScene, "Space"));
 }if(keys.center == 2)
-{keys.center = 0;
+{//keys.center = 0;
 if ( gdjs.MenuSceneCode.condition0IsTrue_0.val ) {
 {
 gdjs.MenuSceneCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("playSelected")) == 1;
@@ -161,3 +158,4 @@ return;
 }
 
 gdjs['MenuSceneCode'] = gdjs.MenuSceneCode;
+
