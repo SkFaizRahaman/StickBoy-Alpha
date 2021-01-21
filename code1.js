@@ -194,7 +194,7 @@ for(var i = 0, k = 0, l = gdjs.MainSceneCode.GDStickObjects2.length;i<l;++i) {
 gdjs.MainSceneCode.GDStickObjects2.length = k;}if ( gdjs.MainSceneCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MainSceneCode.conditionTrue_1 = gdjs.MainSceneCode.condition1IsTrue_0;
-gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8226812);
+gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8264252);
 }
 }}
 if (gdjs.MainSceneCode.condition1IsTrue_0.val) {
@@ -231,7 +231,7 @@ gdjs.MainSceneCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVariableNumb
 }if ( gdjs.MainSceneCode.condition1IsTrue_0.val ) {
 {
 {gdjs.MainSceneCode.conditionTrue_1 = gdjs.MainSceneCode.condition2IsTrue_0;
-gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8231724);
+gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8268676);
 }
 }}
 }
@@ -265,7 +265,7 @@ for(var i = 0, k = 0, l = gdjs.MainSceneCode.GDPlayerObjects1.length;i<l;++i) {
 gdjs.MainSceneCode.GDPlayerObjects1.length = k;}if ( gdjs.MainSceneCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MainSceneCode.conditionTrue_1 = gdjs.MainSceneCode.condition1IsTrue_0;
-gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8233244);
+gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8270844);
 }
 }}
 if (gdjs.MainSceneCode.condition1IsTrue_0.val) {
@@ -388,7 +388,7 @@ for(var i = 0, k = 0, l = gdjs.MainSceneCode.GDTilesObjects2.length;i<l;++i) {
 gdjs.MainSceneCode.GDTilesObjects2.length = k;}if ( gdjs.MainSceneCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MainSceneCode.conditionTrue_1 = gdjs.MainSceneCode.condition1IsTrue_0;
-gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8237972);
+gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8277180);
 }
 }}
 if (gdjs.MainSceneCode.condition1IsTrue_0.val) {
@@ -564,7 +564,7 @@ gdjs.MainSceneCode.GDTilesObjects2.length = k;}if (gdjs.MainSceneCode.condition0
 gdjs.MainSceneCode.condition0IsTrue_0.val = false;
 {
 {gdjs.MainSceneCode.conditionTrue_1 = gdjs.MainSceneCode.condition0IsTrue_0;
-gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8243716);
+gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8283956);
 }
 }if (gdjs.MainSceneCode.condition0IsTrue_0.val) {
 gdjs.MainSceneCode.GDTilesObjects2.length = 0;
@@ -616,7 +616,7 @@ gdjs.MainSceneCode.eventsList6(runtimeScene);} //End of subevents
 gdjs.MainSceneCode.condition0IsTrue_0.val = false;
 {
 {gdjs.MainSceneCode.conditionTrue_1 = gdjs.MainSceneCode.condition0IsTrue_0;
-gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8247372);
+gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8287748);
 }
 }if (gdjs.MainSceneCode.condition0IsTrue_0.val) {
 gdjs.MainSceneCode.GDStickObjects3.length = 0;
@@ -1153,7 +1153,7 @@ gdjs.MainSceneCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumb
 }if ( gdjs.MainSceneCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MainSceneCode.conditionTrue_1 = gdjs.MainSceneCode.condition1IsTrue_0;
-gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8264324);
+gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8305300);
 }
 }}
 if (gdjs.MainSceneCode.condition1IsTrue_0.val) {
@@ -1175,7 +1175,7 @@ gdjs.MainSceneCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumb
 }if ( gdjs.MainSceneCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MainSceneCode.conditionTrue_1 = gdjs.MainSceneCode.condition1IsTrue_0;
-gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8267060);
+gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8308036);
 }
 }}
 if (gdjs.MainSceneCode.condition1IsTrue_0.val) {
@@ -1247,7 +1247,7 @@ gdjs.MainSceneCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumb
 }if ( gdjs.MainSceneCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MainSceneCode.conditionTrue_1 = gdjs.MainSceneCode.condition1IsTrue_0;
-gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8279108);
+gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8320084);
 }
 }}
 if (gdjs.MainSceneCode.condition1IsTrue_0.val) {

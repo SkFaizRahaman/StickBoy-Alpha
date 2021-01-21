@@ -11,30 +11,8 @@ gdjs.MenuSceneCode.condition0IsTrue_0 = {val:false};
 gdjs.MenuSceneCode.condition1IsTrue_0 = {val:false};
 gdjs.MenuSceneCode.condition2IsTrue_0 = {val:false};
 
-//For Kai Inputs
-const softkeyCallback = {
-    ArrowRightClick: function(){keys.ClickRight = true},
-    ArrowLeftClick: function(){keys.ClickLeft = true},
-    ArrowUpClick: function(){keys.ClickUp = true},
-    ArrowDownClick: function(){keys.ClickDown = true},
-    left: function(){keys.left = true},
-    right: function(){keys.right = 1},
-    center: function(){keys.center = 1}
-};
-//End
 
 gdjs.MenuSceneCode.eventsList0 = function(runtimeScene) {
-
-{
-
-
-{
-}
-
-}
-
-
-};gdjs.MenuSceneCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -48,10 +26,7 @@ gdjs.copyArray(runtimeScene.getObjects("PlayBtn"), gdjs.MenuSceneCode.GDPlayBtnO
 }{for(var i = 0, len = gdjs.MenuSceneCode.GDPlayBtnObjects1.length ;i < len;++i) {
     gdjs.MenuSceneCode.GDPlayBtnObjects1[i].setColor("248;231;28");
 }
-}
-{ //Subevents
-gdjs.MenuSceneCode.eventsList0(runtimeScene);} //End of subevents
-}
+}}
 
 }
 
@@ -126,16 +101,15 @@ gdjs.copyArray(runtimeScene.getObjects("PlayBtn"), gdjs.MenuSceneCode.GDPlayBtnO
 gdjs.MenuSceneCode.condition0IsTrue_0.val = false;
 gdjs.MenuSceneCode.condition1IsTrue_0.val = false;
 {
-gdjs.MenuSceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.anyKeyPressed(runtimeScene)
-}if(softkeyCallback.center){
-if ( gdjs.MenuSceneCode.condition0IsTrue_0.val ) {
+gdjs.MenuSceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.anyKeyPressed(runtimeScene);
+}if ( gdjs.MenuSceneCode.condition0IsTrue_0.val ) {
 {
 gdjs.MenuSceneCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("playSelected")) == 1;
 }}
 if (gdjs.MenuSceneCode.condition1IsTrue_0.val) {
 {gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "MainScene");
 }}
-}
+
 }
 
 
@@ -163,7 +137,7 @@ gdjs.MenuSceneCode.GDPlayBtnObjects2.length = 0;
 gdjs.MenuSceneCode.GDExitBtnObjects1.length = 0;
 gdjs.MenuSceneCode.GDExitBtnObjects2.length = 0;
 
-gdjs.MenuSceneCode.eventsList1(runtimeScene);
+gdjs.MenuSceneCode.eventsList0(runtimeScene);
 return;
 
 }
