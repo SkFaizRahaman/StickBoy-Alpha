@@ -101,7 +101,7 @@ gdjs.copyArray(runtimeScene.getObjects("PlayBtn"), gdjs.MenuSceneCode.GDPlayBtnO
 gdjs.MenuSceneCode.condition0IsTrue_0.val = false;
 gdjs.MenuSceneCode.condition1IsTrue_0.val = false;
 {
-gdjs.MenuSceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.anyKeyPressed(runtimeScene);
+gdjs.MenuSceneCode.condition0IsTrue_0.val = !(gdjs.evtTools.input.wasKeyReleased(runtimeScene, "Space"));
 }if ( gdjs.MenuSceneCode.condition0IsTrue_0.val ) {
 {
 gdjs.MenuSceneCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("playSelected")) == 1;

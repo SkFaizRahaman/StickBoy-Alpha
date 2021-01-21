@@ -95,7 +95,9 @@ gdjs.MainSceneCode.condition0IsTrue_1 = {val:false};
 gdjs.MainSceneCode.condition1IsTrue_1 = {val:false};
 gdjs.MainSceneCode.condition2IsTrue_1 = {val:false};
 gdjs.MainSceneCode.condition3IsTrue_1 = {val:false};
-
+var keys = {
+    center : 0
+};
 
 gdjs.MainSceneCode.eventsList0 = function(runtimeScene) {
 
@@ -194,7 +196,7 @@ for(var i = 0, k = 0, l = gdjs.MainSceneCode.GDStickObjects2.length;i<l;++i) {
 gdjs.MainSceneCode.GDStickObjects2.length = k;}if ( gdjs.MainSceneCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MainSceneCode.conditionTrue_1 = gdjs.MainSceneCode.condition1IsTrue_0;
-gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8264252);
+gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8262764);
 }
 }}
 if (gdjs.MainSceneCode.condition1IsTrue_0.val) {
@@ -231,7 +233,7 @@ gdjs.MainSceneCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVariableNumb
 }if ( gdjs.MainSceneCode.condition1IsTrue_0.val ) {
 {
 {gdjs.MainSceneCode.conditionTrue_1 = gdjs.MainSceneCode.condition2IsTrue_0;
-gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8268676);
+gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8267188);
 }
 }}
 }
@@ -265,7 +267,7 @@ for(var i = 0, k = 0, l = gdjs.MainSceneCode.GDPlayerObjects1.length;i<l;++i) {
 gdjs.MainSceneCode.GDPlayerObjects1.length = k;}if ( gdjs.MainSceneCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MainSceneCode.conditionTrue_1 = gdjs.MainSceneCode.condition1IsTrue_0;
-gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8270844);
+gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8269356);
 }
 }}
 if (gdjs.MainSceneCode.condition1IsTrue_0.val) {
@@ -388,7 +390,7 @@ for(var i = 0, k = 0, l = gdjs.MainSceneCode.GDTilesObjects2.length;i<l;++i) {
 gdjs.MainSceneCode.GDTilesObjects2.length = k;}if ( gdjs.MainSceneCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MainSceneCode.conditionTrue_1 = gdjs.MainSceneCode.condition1IsTrue_0;
-gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8277180);
+gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8275692);
 }
 }}
 if (gdjs.MainSceneCode.condition1IsTrue_0.val) {
@@ -564,7 +566,7 @@ gdjs.MainSceneCode.GDTilesObjects2.length = k;}if (gdjs.MainSceneCode.condition0
 gdjs.MainSceneCode.condition0IsTrue_0.val = false;
 {
 {gdjs.MainSceneCode.conditionTrue_1 = gdjs.MainSceneCode.condition0IsTrue_0;
-gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8283956);
+gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8282468);
 }
 }if (gdjs.MainSceneCode.condition0IsTrue_0.val) {
 gdjs.MainSceneCode.GDTilesObjects2.length = 0;
@@ -616,7 +618,7 @@ gdjs.MainSceneCode.eventsList6(runtimeScene);} //End of subevents
 gdjs.MainSceneCode.condition0IsTrue_0.val = false;
 {
 {gdjs.MainSceneCode.conditionTrue_1 = gdjs.MainSceneCode.condition0IsTrue_0;
-gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8287748);
+gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8286260);
 }
 }if (gdjs.MainSceneCode.condition0IsTrue_0.val) {
 gdjs.MainSceneCode.GDStickObjects3.length = 0;
@@ -655,8 +657,10 @@ gdjs.copyArray(runtimeScene.getObjects("Stick"), gdjs.MainSceneCode.GDStickObjec
 gdjs.MainSceneCode.condition0IsTrue_0.val = false;
 gdjs.MainSceneCode.condition1IsTrue_0.val = false;
 {
-gdjs.MainSceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
-}if ( gdjs.MainSceneCode.condition0IsTrue_0.val ) {
+gdjs.MainSceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.anyKeyPressed(runtimeScene)//gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
+}if(keys.center == 1)
+{
+if ( gdjs.MainSceneCode.condition0IsTrue_0.val ) {
 {
 gdjs.MainSceneCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("canStickCreate")) == 1;
 }}
@@ -670,7 +674,7 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.MainSceneCode.GDPlayerObj
 { //Subevents
 gdjs.MainSceneCode.eventsList8(runtimeScene);} //End of subevents
 }
-
+}
 }
 
 
@@ -680,8 +684,10 @@ gdjs.MainSceneCode.eventsList8(runtimeScene);} //End of subevents
 gdjs.MainSceneCode.condition0IsTrue_0.val = false;
 gdjs.MainSceneCode.condition1IsTrue_0.val = false;
 {
-gdjs.MainSceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "Space");
-}if ( gdjs.MainSceneCode.condition0IsTrue_0.val ) {
+gdjs.MainSceneCode.condition0IsTrue_0.val = !(gdjs.evtTools.input.anyKeyPressed(runtimeScene))//gdjs.evtTools.input.wasKeyReleased(runtimeScene, "Space");
+}if(keys.center == 2)
+{keys.center = 0;
+if ( gdjs.MainSceneCode.condition0IsTrue_0.val ) {
 {
 gdjs.MainSceneCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("keyPressed")) == 1;
 }}
@@ -693,7 +699,7 @@ gdjs.copyArray(runtimeScene.getObjects("Stick"), gdjs.MainSceneCode.GDStickObjec
 }{runtimeScene.getVariables().get("stickHeight").setNumber((( gdjs.MainSceneCode.GDStickObjects2.length === 0 ) ? 0 :gdjs.MainSceneCode.GDStickObjects2[0].getHeight()));
 }{gdjs.evtTools.sound.stopSoundOnChannel(runtimeScene, 1);
 }}
-
+}
 }
 
 
@@ -749,8 +755,10 @@ gdjs.MainSceneCode.condition0IsTrue_0.val = false;
 gdjs.MainSceneCode.condition1IsTrue_0.val = false;
 gdjs.MainSceneCode.condition2IsTrue_0.val = false;
 {
-gdjs.MainSceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
-}if ( gdjs.MainSceneCode.condition0IsTrue_0.val ) {
+gdjs.MainSceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.anyKeyPressed(runtimeScene) //gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
+}if(keys.center == 1)
+{
+if ( gdjs.MainSceneCode.condition0IsTrue_0.val ) {
 {
 for(var i = 0, k = 0, l = gdjs.MainSceneCode.GDTilesObjects2.length;i<l;++i) {
     if ( gdjs.MainSceneCode.GDTilesObjects2[i].getX() >= 158 ) {
@@ -776,7 +784,7 @@ if (gdjs.MainSceneCode.condition2IsTrue_0.val) {
 }{runtimeScene.getVariables().get("rightTileWidth").setNumber((( gdjs.MainSceneCode.GDTilesObjects2.length === 0 ) ? 0 :gdjs.MainSceneCode.GDTilesObjects2[0].getWidth()));
 }{runtimeScene.getVariables().get("PlayerReachedPos").setNumber((( gdjs.MainSceneCode.GDTilesObjects2.length === 0 ) ? 0 :gdjs.MainSceneCode.GDTilesObjects2[0].getX()) + (((( gdjs.MainSceneCode.GDTilesObjects2.length === 0 ) ? 0 :gdjs.MainSceneCode.GDTilesObjects2[0].getWidth()) - 26) - 2));
 }}
-
+}
 }
 
 
@@ -1153,7 +1161,7 @@ gdjs.MainSceneCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumb
 }if ( gdjs.MainSceneCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MainSceneCode.conditionTrue_1 = gdjs.MainSceneCode.condition1IsTrue_0;
-gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8305300);
+gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8303812);
 }
 }}
 if (gdjs.MainSceneCode.condition1IsTrue_0.val) {
@@ -1175,7 +1183,7 @@ gdjs.MainSceneCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumb
 }if ( gdjs.MainSceneCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MainSceneCode.conditionTrue_1 = gdjs.MainSceneCode.condition1IsTrue_0;
-gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8308036);
+gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8306548);
 }
 }}
 if (gdjs.MainSceneCode.condition1IsTrue_0.val) {
@@ -1229,12 +1237,15 @@ gdjs.MainSceneCode.eventsList15(runtimeScene);} //End of subevents
 
 gdjs.MainSceneCode.condition0IsTrue_0.val = false;
 {
-gdjs.MainSceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
-}if (gdjs.MainSceneCode.condition0IsTrue_0.val) {
+gdjs.MainSceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.anyKeyPressed(runtimeScene)//gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
+}if(keys.center == 1)
+{
+if (gdjs.MainSceneCode.condition0IsTrue_0.val) {
 {runtimeScene.getVariables().get("isSpaceKeyPressed").setNumber(1);
 }}
-
 }
+}
+
 
 
 {
@@ -1247,7 +1258,7 @@ gdjs.MainSceneCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumb
 }if ( gdjs.MainSceneCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MainSceneCode.conditionTrue_1 = gdjs.MainSceneCode.condition1IsTrue_0;
-gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8320084);
+gdjs.MainSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8318596);
 }
 }}
 if (gdjs.MainSceneCode.condition1IsTrue_0.val) {
