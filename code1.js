@@ -95,10 +95,18 @@ gdjs.MainSceneCode.condition0IsTrue_1 = {val:false};
 gdjs.MainSceneCode.condition1IsTrue_1 = {val:false};
 gdjs.MainSceneCode.condition2IsTrue_1 = {val:false};
 gdjs.MainSceneCode.condition3IsTrue_1 = {val:false};
+
+//Keys Inputs Configuration
 var keys = {
+    ClickRight =false,
+    ClickLeft = false,
+    ClickUp = false,
+    ClickDown = false,
+    left : false,
+    right : 0,
     center : 0
 };
-
+//End Inputs Configurations
 gdjs.MainSceneCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -1309,11 +1317,13 @@ gdjs.MainSceneCode.condition0IsTrue_0.val = !(gdjs.evtTools.input.anyKeyPressed(
 
 gdjs.MainSceneCode.condition0IsTrue_0.val = false;
 {
-gdjs.MainSceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Down");
-}if (gdjs.MainSceneCode.condition0IsTrue_0.val) {
+gdjs.MainSceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.anyKeyPressed(runtimeScene)//gdjs.evtTools.input.isKeyPressed(runtimeScene, "Down");
+}if(keys.ClickDown)
+{
+if (gdjs.MainSceneCode.condition0IsTrue_0.val) {
 {runtimeScene.getVariables().get("isDownKeyPressed").setNumber(1);
 }}
-
+}
 }
 
 
@@ -1322,11 +1332,13 @@ gdjs.MainSceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(run
 
 gdjs.MainSceneCode.condition0IsTrue_0.val = false;
 {
-gdjs.MainSceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Up");
-}if (gdjs.MainSceneCode.condition0IsTrue_0.val) {
+gdjs.MainSceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.anyKeyPressed(runtimeScene)//gdjs.evtTools.input.isKeyPressed(runtimeScene, "Up");
+}if(keys.ClickUp)
+{
+if (gdjs.MainSceneCode.condition0IsTrue_0.val) {
 {runtimeScene.getVariables().get("isUpKeyPressed").setNumber(1);
 }}
-
+}
 }
 
 

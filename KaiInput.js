@@ -84,3 +84,18 @@ function handleKeyUp(evt) {
 };
 
 document.addEventListener('keyup', handleKeyUp);
+
+/*
+
+//Keys Inputs Configuration
+var keys = {
+    ClickRight =false,
+    ClickLeft = false,
+    ClickUp = false,
+    ClickDown = false,
+    left : false,
+    right : 0,
+    center : 0
+};
+//End Inputs Configurations
+*/
