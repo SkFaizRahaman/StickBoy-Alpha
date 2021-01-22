@@ -48,14 +48,15 @@ document.addEventListener("DOMContentLoaded", () => {
             })
            
 			document.addEventListener('keydown',function AdClicked(){
-				if(keys.left)
+      
+        if(keys.right == 1)
 				  {
 						x.style.display = "block";
 			
 				  }
          })
         document.addEventListener('keydown',function AdClicked(){
-          if(keys.right == 1)
+          if(keys.left)
             {
                   ad.call('click')
             }
