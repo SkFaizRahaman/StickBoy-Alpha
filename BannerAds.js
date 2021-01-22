@@ -1,6 +1,6 @@
 var isAdsShow = false;
 var isGameRunning = false;
-var x = document.getElementById('ad-container');
+var x = document.getElementById('display');
 var keys = 
 {
      ClickDown : false,
@@ -48,15 +48,14 @@ document.addEventListener("DOMContentLoaded", () => {
             })
            
 			document.addEventListener('keydown',function AdClicked(){
-      
-        if(keys.right == 1)
+        if(keys.left)
 				  {
 						x.style.display = "block";
 			
 				  }
          })
         document.addEventListener('keydown',function AdClicked(){
-          if(keys.left)
+          if(keys.right == 1)
             {
                   ad.call('click')
             }
