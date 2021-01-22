@@ -116,7 +116,7 @@ gdjs.MenuSceneCode.condition1IsTrue_0.val = false;
 {
 gdjs.MenuSceneCode.condition0IsTrue_0.val = !(gdjs.evtTools.input.anyKeyPressed(runtimeScene))//(gdjs.evtTools.input.wasKeyReleased(runtimeScene, "Space"));
 }if(keys.center == 2)
-{//keys.center = 0;
+{keys.center = 0;
 if ( gdjs.MenuSceneCode.condition0IsTrue_0.val ) {
 {
 gdjs.MenuSceneCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("playSelected")) == 1;
@@ -134,7 +134,7 @@ if (gdjs.MenuSceneCode.condition1IsTrue_0.val) {
 gdjs.MenuSceneCode.condition0IsTrue_0.val = false;
 {
 gdjs.MenuSceneCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("playSelected")) == 0;
-}if (gdjs.MenuSceneCode.condition0IsTrue_0.val) {
+}if (gdjs.MenuSceneCode.condition0IsTrue_0.val) {window.close();
 }
 
 }

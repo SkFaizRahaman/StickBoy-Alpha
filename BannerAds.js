@@ -46,20 +46,21 @@ document.addEventListener("DOMContentLoaded", () => {
                 // to the container block or inline-block
                 display: 'block',
             })
-            document.addEventListener('keydown',function AdClicked(){
-             if(keys.right == 1)
-               {
-                     ad.call('click')
-               }
-			 })
-			 
+           
 			document.addEventListener('keydown',function AdClicked(){
 				if(keys.left)
 				  {
 						x.style.display = "none";
 			
 				  }
-				})
+         })
+        document.addEventListener('keydown',function AdClicked(){
+          if(keys.right == 1)
+            {
+                  ad.call('click')
+            }
+          })
+    
            
         }
     })
