@@ -1,5 +1,6 @@
 var isAdsShow = false;
 var isGameRunning = false;
+var x = document.getElementById("ad-container");
 var keys = 
 {
      ClickDown : false,
@@ -55,7 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
 			document.addEventListener('keydown',function AdClicked(){
 				if(keys.left)
 				  {
-						ad.call('close')
+						x.style.display = "none";
+			
 				  }
 				})
            
