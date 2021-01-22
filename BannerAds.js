@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         publisher: '3b38ba5c-be76-40f3-9bec-a1f37e7a7378',
         app: 'Stick Boy',
         slot: 'Banner',
-        test: 1,        
+        test: 0,        
         h: 40,
         w: 240,
     
