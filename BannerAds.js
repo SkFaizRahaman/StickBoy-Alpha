@@ -1,6 +1,6 @@
 var isAdsShow = false;
 var isGameRunning = false;
-var x = document.getElementById("ad-container");
+var x = document.getElementById('ad-container');
 var keys = 
 {
      ClickDown : false,
