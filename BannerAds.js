@@ -1,4 +1,5 @@
 var isAdsShow = false;
+var isDomLoaded = false;
 var isGameRunning = false;
 var x = document.getElementById('display');
 var keys = 
@@ -12,7 +13,8 @@ var keys =
      right : 0
 };
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("BannerAds");
+    isDomLoaded = true;
+
     getKaiAd({
         publisher: '3b38ba5c-be76-40f3-9bec-a1f37e7a7378',
         app: 'Stick Boy',
@@ -44,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
                 // display style will be applied
                 // to the container block or inline-block
-                display: 'none',
+                display: 'block',
             })
            
 			document.addEventListener('keydown',function AdClicked(){
@@ -64,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
            
         }
     })
-    });
+  });
     
   
 
