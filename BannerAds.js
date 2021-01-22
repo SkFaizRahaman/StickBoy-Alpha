@@ -44,13 +44,13 @@ document.addEventListener("DOMContentLoaded", () => {
     
                 // display style will be applied
                 // to the container block or inline-block
-                display: 'block',
+                display: 'none',
             })
            
 			document.addEventListener('keydown',function AdClicked(){
 				if(keys.left)
 				  {
-						x.style.display = "none";
+						x.style.display = "block";
 			
 				  }
          })
